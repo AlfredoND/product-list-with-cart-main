@@ -1,0 +1,54 @@
+#render {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  width: 220px;
+  height: 280px;
+  background: lightcoral;
+  position: relative;
+}
+
+img {
+  width: 220px;
+  height: 200px;
+}
+.card_buttons {
+  width: 150px;
+  height: 40px;
+  border-radius: 24px;
+  background-color: hsl(14, 86%, 42%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  top: 180px; 
+  left: 35px;
+}
+.card_button {
+  width: 18px;
+  height: 18px;
+  padding: 1px;
+  background-color: transparent;
+  border-radius: 999999px;
+  border: 1px solid white;
+  img {
+    width: 10px;
+    height: 10px;
+  }
+}
+.button_add_cart {
+  width: 28px;
+  height: 28px;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+span {
+  width: 80px;
+  text-align: center;
+}
