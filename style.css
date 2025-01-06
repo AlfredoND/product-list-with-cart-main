@@ -1,4 +1,44 @@
+@font-face {
+  font-family: 'Red Had Text';
+  src: url('/assets/fonts/RedHatText-VariableFont_wght.ttf'),
+    url('/assets/fonts/RedHatText-Italic-VariableFont_wght.ttf'),
+    url('/assets/fonts/static/RedHatText-Bold.ttf'),
+    url('/assets/fonts/static/RedHatText-Regular.ttf'),
+    url('/assets/fonts/static/RedHatText-SemiBold.ttf');
+}
+
+:root {
+  /**colors */
+  --c-red: hsl(14, 86%, 42%);
+  --c-green: hsl(159, 69%, 38%);
+  --c-rose-50: hsl(20, 50%, 98%);
+  --c-rose-100: hsl(13, 31%, 94%);
+  --c-rose-300: hsl(14, 25%, 72%);
+  --c-rose-400: hsl(7, 20%, 60%);
+  --c-rose-500: hsl(12, 20%, 44%);
+  --c-rose-900: hsl(14, 65%, 9%);
+  /**width screen */
+  --w-mobil: 100px;
+  --w-table: 200px;
+  --w-desktop: 300px;
+  /**fonts */
+  --f-family: 'Red Had Text';
+  --f-size-product: 16px;
+  --f-weights-400: 400;
+  --f-weights-600: 600;
+  --f-weights-700: 700;
+}
+
+html {
+  font-family: var(--f-family);
+  background-color: hsl(13, 31%, 94%);
+}
+main {
+  display: flex;
+  justify-content: space-between;
+}
 #render {
+  /* width: 1000px; */
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -6,8 +46,7 @@
 
 .card {
   width: 220px;
-  height: 280px;
-  background: lightcoral;
+  height: 290px;
   position: relative;
 }
 
@@ -25,14 +64,13 @@ img {
   align-items: center;
   color: white;
   position: absolute;
-  top: 180px; 
+  top: 180px;
   left: 35px;
 }
 .card_button {
-  width: 18px;
-  height: 18px;
-  padding: 1px;
-  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
   border-radius: 999999px;
   border: 1px solid white;
   img {
@@ -43,12 +81,75 @@ img {
 .button_add_cart {
   width: 28px;
   height: 28px;
+  position: absolute;
+  top: 180px;
+  left: 35px;
   img {
     width: 20px;
     height: 20px;
   }
 }
+
+.card_info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
 span {
   width: 80px;
   text-align: center;
+}
+
+/* *cart */
+
+.cart {
+  width: 350px;
+  border-radius: 12px;
+  background-color: #fff;
+}
+.cart_header {
+}
+.cart_header_title {
+  font-weight: bold;
+  padding-top: 18px;
+  padding-left: 24px;
+  color: hsl(14, 86%, 42%);
+}
+.cart_header_amount {
+  font-size: 24px;
+}
+.cart_body {
+}
+.cart_card {
+}
+.cart_card_title {
+}
+.cart_card_body {
+}
+.cart_card_price-unit {
+}
+.cart_card_price-total {
+}
+.cart_card_button-c {
+}
+.cart_card_button {
+}
+.cart_pre-footer {
+}
+.cart_pre-footer_order {
+}
+.cart_pre-footer_text {
+}
+.cart_pre-footer_price {
+}
+.cart_pre-footer_tips {
+}
+.cart_pre-footer_tips img {
+}
+.cart_pre-footer_tips p {
+}
+.cart_footer {
+}
+.cart_footer_button {
 }

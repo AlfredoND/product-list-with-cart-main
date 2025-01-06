@@ -1,32 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-<script src="main.js" defer></script>
-  <title>Frontend Mentor | Product list with cart</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="main.js" defer></script> -->
+    <title>Frontend Mentor | Product list with cart</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-<main>
-  <section>
-    <div id="render"></div>
-  </section>
-  <article></article>
-</main>
-  
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div id="render"></div>
+      </section>
+      <article class="cart">
+        <header class="cart_header">
+          <h2 class="cart_header_title">
+            Your Cart (<span class="cart_header_amount">7</span>)
+          </h2>
+        </header>
+        <section class="cart_body">
+          <div class="cart_card">
+            <h6 class="cart_card_title">Classic Tiramisu</h6>
+            <div class="cart_card_body">
+              <span class="cart_card_amount">1x</span>
+              <span class="cart_card_price-unit">@ $5.50</span>
+              <span class="cart_card_price-total">$5.50</span>
+            </div>
+            <div class="cart_card_button-c">
+              <button class="cart_card_button">x</button>
+            </div>
+          </div>
+          <div class="cart_card">
+            <h6 class="cart_card_title">Vanilla Bean Crème Brulée</h6>
+            <div class="cart_card_body">
+              <span class="cart_card_amount">4x</span>
+              <span class="cart_card_price-unit">@ $7.70</span>
+              <span class="cart_card_price-total">$28.00</span>
+            </div>
+            <div class="cart_card_button-c">
+              <button class="cart_card_button">x</button>
+            </div>
+          </div>
+          <div class="cart_card">
+            <h6 class="cart_card_title">Vanilla Panna Cotta</h6>
+            <div class="cart_card_body">
+              <span class="cart_card_amount">2x</span>
+              <span class="cart_card_price-unit">@ $6.50</span>
+              <span class="cart_card_price-total">$13.00</span>
+            </div>
+            <div class="cart_card_button-c">
+              <button class="cart_card_button">x</button>
+            </div>
+          </div>
+        </section>
+        <section class="cart_pre-footer">
+          <div class="cart_pre-footer_order">
+            <span class="cart_pre-footer_text">Order total</span>
+            <h3 class="cart_pre-footer_price">$46.50</h3>
+          </div>
+          <div class="cart_pre-footer_tips">
+            <img
+              src="./assets/images/icon-carbon-neutral.svg"
+              alt="icono de borde verde con forma arbol" />
+            <p>This is a carbon-neutral delivery</p>
+          </div>
+        </section>
+        <footer class="cart_footer">
+          <button class="cart_footer_button">confirm Order</button>
+        </footer>
+      </article>
+    </main>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. Coded by
+      <a href="#">Your Name Here</a>.
+    </div>
+  </body>
 </html>

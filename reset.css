@@ -1,0 +1,108 @@
+/*reseteo de margin y padding de todo*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+  }
+  /*evitamos problemas con las imagenes*/
+  img,
+  picture,
+  video,
+  iframe,
+  figure {
+    max-width: 100%;
+    width: 100%;
+    display: block;
+  }
+  /*reseteo de los enlaces para funcionar como caja... */
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+  /*...excepto los que se encuentran en parrafo*/
+  p a {
+    display: inline-block;
+  }
+  /*quitamos las puntos de los <li> */
+  li {
+    list-style: none;
+  }
+  /*configuramos anclas suaves*/
+  html {
+    scroll-behavior: smooth;
+  }
+  /*desactivamos estilos por defectos de las principales etiquetas
+      */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: inherit;
+    font-style: inherit;
+    color: inherit;
+    text-wrap: balance;
+  }
+  p,
+  span,
+  a,
+  strong,
+  blockquote,
+  i,
+  b,
+  u,
+  em {
+    font-size: 1rem;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+    text-wrap: pretty; /*! 15-01-2024 no es compatibles con todos los navegadores */
+  }
+  /* evitamos problemas  con los pseudoelementos de quotes */
+  blockquote::before,
+  blockquote::after,
+  q::before,
+  q::after {
+    content: ' ';
+    content: none;
+  }
+  
+  /*nivelamos problemas de tipografias y colocación de formularios*/
+  form,
+  input,
+  textarea,
+  select,
+  button,
+  label {
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit;
+  }
+  /*reseteamos tablas*/
+  table,
+  tr,
+  td {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  /*evitamos problemas con los SVG*/
+  svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+  }
+  /*configuramos la tipografia para toda la web*/
+  body {
+    font-size: 100%;
+    line-height: 1.4em;
+    /* hyphens: auto;*/ /*! opcional, pero se recomiendo su omicion */
+  }
+  
